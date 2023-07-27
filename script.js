@@ -7,6 +7,8 @@ function openOnglet(evt, name){
     }
     tablinks = document?getElementsByClassName('tablinks');
     for (i=0; i <tablinks.length; i++){
-        tablinks[i].className = tablinks[i].className.replace()
+        tablinks[i].className = tablinks[i].className.replace("active", "");
     }
+    document.getElementById(name).style.display = 'block';
+    evt.currentTarget.className += "active";
 }
