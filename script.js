@@ -1,8 +1,7 @@
 function openOnglet(evt, name) {
-    alert('vous avez cliqué sur un bouton');
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName('tabcontent');
-    for (i = 0; i < tabcontent.length; i++) {
+    for (i = 0; i <tabcontent.length; i++) {
         tabcontent[i].style.display = 'none';
     }
 
@@ -11,6 +10,6 @@ function openOnglet(evt, name) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(name).style.display = 'block';
+    document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
 }
